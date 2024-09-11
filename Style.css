@@ -39,9 +39,9 @@ body {
     margin-left: -100px;
 }
 
-@media only screen and (max-width: 1000px ){
+@media only screen and (max-width: 1000px) {
     #logo {
-    margin-left: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -74,22 +74,23 @@ body {
     align-items: center;
     padding: 30px 10%;
     margin-top: 100px;
-    
+
 }
-@media only screen and (min-width: 850px ){
-    .home{
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 90vh;
-    background-color: #061b2c;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 30px 10%;
-    margin-top: 100px;
+
+@media only screen and (min-width: 850px) {
+    .home {
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+        height: 90vh;
+        background-color: #061b2c;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 30px 10%;
+        margin-top: 100px;
     }
 }
 
@@ -129,7 +130,7 @@ body {
     animation: slideleft .7s ease-in forwards;
     grid-template-columns: repeat(auto-fit);
     align-items: center;
-    
+
 }
 
 
@@ -142,14 +143,14 @@ body {
     /* margin-left: 300px; */
 }
 
-@media only screen and (max-width: 850px ){
+@media only screen and (max-width: 850px) {
     .home img {
         border: 3px solid #0ef;
         border-radius: 50%;
         margin-top: 10px;
         width: 200px;
         height: auto;
-        
+
     }
 }
 
@@ -178,7 +179,7 @@ body {
     color: #061b2c;
     background-color: #0ef;
     box-shadow: 0 0 20px #0ef;
-    /* Effect of glow when hover*/
+    transition: 1s;
 }
 
 .btn-box {
@@ -194,7 +195,11 @@ body {
 }
 
 .btn-box:hover {
-    box-shadow: 0px 0px 10px cyan
+    box-shadow: 0px 0px 10px cyan;
+    transition: .5s;
+    cursor: pointer;
+    background-color: black;
+    color: cyan;
 }
 
 .text {
@@ -203,7 +208,7 @@ body {
 
 .about {
     /* display: grid; */
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
@@ -216,7 +221,7 @@ body {
     margin-top: 100px;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     .about-text h2 {
         font-size: 60px;
         margin-top: 0;
@@ -237,7 +242,7 @@ body {
     margin: 15px 0 20px 50px;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     .about-text h4 {
         font-size: 20px;
         font-weight: 600;
@@ -288,6 +293,8 @@ body {
         0px 0px 25px #0ef;
     color: #0ef;
     background-color: #000000;
+    transition: 1s;
+    cursor: pointer;
 }
 
 #Services {
@@ -325,7 +332,7 @@ body {
     font-weight: 500;
     border-right: 10px;
     border-radius: 20px;
-    transition:  0.7s, transform 0.5s;
+    transition: 0.7s, transform 0.5s;
     box-shadow: 1px 1px 20px rgb(39, 39, 123),
         1px 1px 40px rgb(76, 57, 94);
 }
@@ -371,6 +378,9 @@ body {
     color: #0ef;
     background-color: #000000;
 
+    transition: .7s;
+    cursor: pointer;
+
 }
 
 .skills-list div:hover {
@@ -394,13 +404,14 @@ section {
     grid-template-columns: repeat(auto-fit);
 }
 
-@media only screen and (max-width: 1350px){
-.container1 {
-    margin: auto auto;
-    grid-template-columns: repeat(auto-fit);
- }
+@media only screen and (max-width: 1350px) {
+    .container1 {
+        margin: auto auto;
+        grid-template-columns: repeat(auto-fit);
+    }
 }
-.radial-bar{
+
+.radial-bar {
     grid-template-columns: repeat(auto-fit);
 }
 
@@ -480,7 +491,7 @@ section {
 }
 
 .progress-line.JavaScript span {
-    width: 25%;
+    width: 60%;
 }
 
 .progress-line.C span {
@@ -646,7 +657,8 @@ section {
 .main-text h2 {
     font-size: 50px;
     line-height: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -852,20 +864,29 @@ form textarea {
 }
 
 
+.no-spinners::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    display: none;
+}
+
 .contact-form #send:hover {
 
     box-shadow: 0px 0px 25px #0ef,
         0px 0px 25px #0ef;
     color: #0ef;
     background-color: #000000;
+
+    transition: 1s;
+    cursor: pointer;
 }
-.top{
+
+.top {
     position: fixed;
     bottom: 2.1rem;
     right: 2.1rem;
 }
 
-.top i{
+.top i {
     color: #000;
     background: #0ef;
     font-size: 20px;
@@ -873,13 +894,14 @@ form textarea {
     border-radius: 50%;
 }
 
-.top i:hover{
+.top i:hover {
     color: #0ef;
     background: #000;
-    box-shadow:0 0 15px #0ef ;
+    box-shadow: 0 0 15px #0ef;
+    transition: .6s;
 }
 
-footer{
+footer {
     margin-top: 10px;
     display: flex;
     align-items: center;
