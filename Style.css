@@ -1339,6 +1339,12 @@ footer {
         min-width: 35rem;
         flex-wrap: wrap;
         margin-right: -3rem;
+        margin-top: 7rem;
+    }
+
+    .about-text h4,
+    h2 {
+        padding-right: 3rem;
     }
 
     .more-about-me {
@@ -1356,7 +1362,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* margin-left: 4rem; */
     }
 
     .skills-section {
@@ -1388,25 +1393,25 @@ footer {
         align-items: center;
         justify-content: center;
         max-width: fit-content;
-        margin-right: -7rem;
+        margin-right: -4rem;
     }
 
     #project-section {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: -7rem;
+        margin-right: -4rem;
     }
 
     .contact {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: -9rem;
+        margin-right: -5rem;
     }
 
     footer {
-        margin-right: -8rem;
+        margin-right: -6rem;
     }
 }
 
