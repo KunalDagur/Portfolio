@@ -61,10 +61,10 @@ body {
 }
 
 .navbar a:hover {
-    color: #0ef;
+    color: black;
     border-radius: 2rem;
-    background-color: #000000;
-    transition: .8s ease-in-out;
+    background-color: cyan;
+    transition: .5s ease-in-out;
 }
 
 .home {
@@ -354,6 +354,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-direction: column; */
 }
 
 
