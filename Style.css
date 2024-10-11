@@ -37,6 +37,12 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+#logo:hover {
+    color: #0ef;
+    transition: 1s;
+    cursor: pointer;
+}
+
 
 .navbar {
     margin-right: -2rem;
@@ -1125,7 +1131,7 @@ footer {
 
 @media only screen and (max-width: 915px) {
     .navbar img {
-        width: 4rem;
+        width: 3rem;
         display: block;
         margin-right: 1rem;
     }
